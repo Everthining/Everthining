@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gerador de Vídeo IA</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  #videoContainer { width: 100%; max-width: 640px; margin: auto; }
+  video { width: 100%; height: auto; border: 1px solid #000; }
+</style>
+</head>
+<body>
+
+<div id="videoContainer">
+  <video id="videoElement" controls>
+    Seu navegador não suporta vídeos.
+  </video>
+</div>
+
+<input type="text" id="videoTopic" placeholder="Digite o tema do vídeo">
+<button onclick="generateVideo()">Criar Vídeo</button>
+
+<script>
+function generateVideo() {
+  var topic = document.getElementById('videoTopic').value;
+  // Aqui você chamaria a API de IA para criar o vídeo com base no tema
+  // Por exemplo: callAIAPIToGenerateVideo(topic);
+  
+  // Supondo que a API retorne a URL do vídeo, você a definiria como a fonte do elemento de vídeo
+  // document.getElementById('videoElement').src = urlDoVideoGerado;
+}
+</script>
+
+</body>
+</html>
